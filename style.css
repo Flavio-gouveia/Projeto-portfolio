@@ -43,7 +43,7 @@ h2.titulo span {
     color: #00FF08;
 }
 
-button:hover {
+button:hover, form .btn-enviar input:hover {
     box-shadow: 0px 0px 8px #00ff08;
     transform: scale(1.05);
 }
@@ -189,7 +189,7 @@ section.sobre .flex {
     align-items: justify;
 }
 
-.sobre .txt-sobre .btn-social button {
+ .btn-social button {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -205,7 +205,7 @@ section.sobre .flex {
 
 section.portfolio {
     padding: 80px 4%;
-    box-shadow: 0px 0px 40px 10px rgba(255, 255, 255, 0.041);
+    box-shadow: 0px 0px 40px 10px #ffffff1d;
 }
 
 section.portfolio .flex {
@@ -248,4 +248,85 @@ section.portfolio .flex {
     opacity: 1;
     
 }
+
+/* ESTILO DO FORMULARIO */
+
+section.formulario {
+    padding: 80px 4%;
+    
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #242424;
+    border: none;
+    outline: none;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: white;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+form .btn-enviar input {
+     width: 120px;
+     background-color: #00FF08;
+     color: black;
+     font-weight: 700;
+     cursor: pointer;
+     transition: .2s;
+}
+
+/* ESTILO DO RODAPÉ */
+
+footer {
+    padding: 40px 4%;
+    box-shadow: 0px 0px 40px 10px #ffffff1d;
+}
+
+ footer .flex {
+    
+    justify-content: space-between;
+    align-items: center;
+}
+
+.line-footer {
+    padding: 20px 0;
+}
+
+.borda {
+    border-top: 2px solid #00FF08;
+}
+
+footer .line-footer p i {
+    color: #00FF08;
+    font-size: 22px;
+}
+
+footer .line-footer p a {
+    color: white;
+}
+
+
+
+
 
